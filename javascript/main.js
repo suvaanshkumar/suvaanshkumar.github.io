@@ -27,20 +27,43 @@ function fill(x,divname){
 function clear(divname){
   document.getElementById(divname).innerHTML="";
 }
+//sticky navbar
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+//sticky navbar end
 
 //header external
+$('.ss').click(function(){
+	$('.hero, .content').addClass('scrolled');
+});
 $('.sd').click(function(){
 	$('.hero, .content').addClass('scrolled');
 });
 
-$('.hero').mousewheel(function(e){
+$('.hero').on('scroll',function(e){
 	if( e.deltaY < 0 ){
 		$('.hero, .content').addClass('scrolled');
 		return false;
 	}
 });
-$(window).mousewheel(function(e){
+$(window).on('scroll',function(e){
 	if( $('.hero.scrolled').length ){
 		if( $(window).scrollTop() == 0 && e.deltaY > 0 ){
 			$('.hero, .content').removeClass('scrolled');

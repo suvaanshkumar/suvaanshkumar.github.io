@@ -5,10 +5,13 @@
         <title>Suvaansh Kumar</title>
         <meta charset="UTF-8">
         <meta name="description" content="software developer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="software, developer, tableau , analyst,beginner,experienced">
         <link href="images/fevicon.ico" rel="shortcut icon" />
         <link href="style/normalize.css" rel="stylesheet" />
         <link href="style/main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body >
         
@@ -16,18 +19,27 @@
         <div id="wrapper" > 
             <!--constant header -->
             <header>
+                <a  class="ss" >
+                
                 <div class="hero">
                     <div class="hero-inner">
                             <div class="hero-title">
                                 <h1 class="text-light title font-2">Suvaansh Kumar</h1>
                                 <p class="text-capitalize text-light">Software Developer | Data Analyst Practitioner</p>
+                                <a href="https://facebook.com/suvaansh" class="fa fa-facebook"></a>
+                                <a href="https://www.linkedin.com/in/suvaanshkumar" class="fa fa-linkedin"></a>
+                                <a href="https://www.instagram.com/suvaanshkumar/" class="fa fa-instagram"></a>
+                                <a href="https://www.snapchat.com/add/suvaansh" class="fa fa-snapchat-ghost"></a>
+                                <a href="https://join.skype.com/invite/v0SUvEzhCa9D" class="fa fa-skype"></a>
+                                <a href="https://github.com/suvaanshkumar" class="fa fa-github"></a>
                             </div>
-                            <a href="#" class="sd">Click To Know more</a>
+                            <div class="sd">Click To Know more</div>
                     </div>
                 </div>
-                
+            
+            </a>
             </header>
-            <!--nav for internal navigation has to be constant for all-->
+            <!--nav for internal navigation has to be constant for all
             <nav>
                 <ul id="navul">
                     <li><a href="#aboutme">About me</a></li>
@@ -38,7 +50,23 @@
                     <li><a href="sponsors.html">Contact Me </a></li>
                 </ul>
             </nav>
+        -->
+        <!--sticky nav-->
+        <div id="navbar">
+            <ul id="navul">
+                <li><a href="#aboutmenav">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Work experience</a></li>
+                <li><a href="#certificates">Certificates and Honours</a></li>
+                <li><a href="aboutUs.html">Projects</a></li>
+                <li><a href="sponsors.html">Contact Me </a></li>
+            </ul>
+          </div>
+        <!--stucky nav end-->
+        <div id="aboutmenav">
+            <br><br><br><br>
             <div id="aboutme">
+
                 <img src="./img/FB_IMG_1590714973642.jpg"  alt="">
                 <article>
                     A cusp of software development and data anlytics makes me a usefull resource in today's world.
@@ -49,9 +77,11 @@
                     My Motto: STOP LEARNING TO STOP GROWING !
                 </article>
 
-            </div>            
+            </div>   
+        </div>         
             <div id="skills" >
-                
+                <br>
+                <br>
                 <div id="skillnames">
                     <!--skills design as bar ,change nothing from css and js
                         <div class="skillset" onmouseover="move(80)">Java </div>
